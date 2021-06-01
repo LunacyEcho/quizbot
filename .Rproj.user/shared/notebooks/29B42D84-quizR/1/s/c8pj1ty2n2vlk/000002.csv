@@ -1,0 +1,8 @@
+"0","myth.tossups <- tossups %>%"
+"0","  filter(category == ""Mythology"") %>%"
+"0","  select(text, page) %>%"
+"0","  group_by(page) %>%"
+"0","  filter(!(n() < 15))"
+"0",""
+"0","myth.all.tossups <- myth.tossups %>%"
+"0","  filter(!(n() < 20))"

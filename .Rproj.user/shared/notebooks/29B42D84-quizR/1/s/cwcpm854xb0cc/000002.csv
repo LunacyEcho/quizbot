@@ -1,0 +1,8 @@
+"0","lit.tossups <- tossups %>%"
+"0","  filter(category == ""Literature"") %>%"
+"0","  select(text, page) %>%"
+"0","  group_by(page) %>%"
+"0","  filter(!(n() < 18))"
+"0",""
+"0","lit.all.tossups <- lit.tossups %>%"
+"0","  filter(!n() < 23)"

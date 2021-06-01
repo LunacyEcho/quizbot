@@ -1,0 +1,5 @@
+"0","socsci.tossups <- tossups %>%"
+"0","  filter(category == ""Social Science"") %>%"
+"0","  select(text, page) %>%"
+"0","  group_by(page) %>%"
+"0","  filter(!(n() < 8))"

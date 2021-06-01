@@ -1,0 +1,8 @@
+"0","arts.tossups <- tossups %>%"
+"0","  filter(category == ""Fine Arts"") %>%"
+"0","  select(text, page) %>%"
+"0","  group_by(page) %>%"
+"0","  filter(!(n() < 12))"
+"0",""
+"0","arts.all.tossups <- arts.tossups %>%"
+"0","  filter(!(n() < 18))"

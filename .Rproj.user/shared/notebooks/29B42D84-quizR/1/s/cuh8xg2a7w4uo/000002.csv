@@ -1,0 +1,8 @@
+"0","hist.tossups <- tossups %>%"
+"0","  filter(category == ""History"") %>%"
+"0","  select(text, page) %>%"
+"0","  group_by(page) %>%"
+"0","  filter(!(n() < 9))"
+"0",""
+"0","hist.all.tossups <- hist.tossups %>%"
+"0","  filter(!(n() < 13))"
