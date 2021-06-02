@@ -5,7 +5,6 @@
 import nltk
 import sklearn
 from nltk.corpus import stopwords
-from nltk.corpus.reader.wordnet import teardown_module
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 import pandas

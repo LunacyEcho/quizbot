@@ -5,7 +5,6 @@
 import nltk
 import sklearn
 from nltk.corpus import stopwords
-from nltk.corpus.reader.wordnet import teardown_module
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 import pandas
@@ -172,7 +171,7 @@ def tossup(tu, tu_no, answer):
                 response = input("You buzzed! What is your answer?\n")
                 print("You guessed:", response)
                 time.sleep(1)
-                print("The correct respone was:", answer)
+                print("The correct response was:", answer)
                 time.sleep(1)
                 y_or_n = input("Were you right? Press Y/N\n")
                 if (y_or_n.lower() == 'y'):

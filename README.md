@@ -1,6 +1,16 @@
 # QUIZBOT
 
-### Who?
+### TL;DR
+
+To install dependencies: `pip install ntlk sklearn pandas re ftfy time sys math`
+Also download: `nltk.download('stopwords')`
+To watch Quizbot play tossups: `python3 quizbot.py [training file] [game file]`
+To play against Quizbot: `python3 quizbot-interactive.py [training file] [game file]`
+
+Sample interactive game (3 minutes to train) | `python3 quizbot-interactive.py tossups-for-train/all-tossups.csv tossups-for-game/all-game.csv`
+Sample interactive game (1 minute to train) | `python3 quizbot-interactive.py tossups-for-train/all-tossups-small.csv tossups-for-game/all-game-small.csv`
+
+### What's this?
 
 Say hello to Quizbot, the latest program to join the question-answering ranks of WATSON, QANTA, and more! At its core, Quizbot is a program that uses a classifier to answer quizbowl questions. Each "question" contains multiple sentences containing clues going from more to less obscure, all in order to describe a particular thing that a player of the game is trying to guess. IRL quizbowl players use buzzers to "buzz in" when they want to have a guess at the answer, usually interrupting the reader before they finish. Quizbot plays quizbowl similarly to human players, "hearing" questions one word at a time, and "buzzing in" with a guess once it feels certain enough that it knows the answer.
 
@@ -8,7 +18,7 @@ Quizbot was coded in Python and runs a Random Forest Classifier on a file of tra
 
 ### Before Running Quizbot
 
-Before running Quizbot, make sure to install the following libraries: nltk, sklearn, pandas, re, ftfy, time, sys, math. Each can be installed by running `pip install [libraryname]` from the command line. 
+Before running Quizbot, make sure to install the following libraries: nltk, sklearn, pandas, ftfy, time, sys, math. Each can be installed by running `pip install [libraryname]` from the command line. 
 
 ### quizbot.py
 
